@@ -1,4 +1,4 @@
-package paag2;
+package paagbi;
 
 import static org.junit.Assert.assertTrue;
 

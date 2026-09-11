@@ -1,4 +1,4 @@
-package paag2;
+package paagbi;
 
 /**
  * Hello world!
