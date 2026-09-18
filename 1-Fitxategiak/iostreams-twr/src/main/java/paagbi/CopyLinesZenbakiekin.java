@@ -15,31 +15,22 @@ Ez badu xanadu.txt fitxeroa aurkitzen mezu bat azaltzen du salbuespena try-catch
 public class CopyLinesZenbakiekin {
     public static void main(String[] args) throws IOException {
 
-        BufferedReader in = null;
-        PrintWriter out = null;
-
-        try {
-            in = new BufferedReader(new FileReader("xanadu.txt"));
-            out = new PrintWriter(new FileWriter("outagain.txt"));
+        try (BufferedReader in = new BufferedReader(new FileReader("xanadu.txt"));
+            PrintWriter out = new PrintWriter(new FileWriter("outagain.txt"))){
+            
             String l;
             int lnumber = 1;
+            
             while ((l = in.readLine()) != null) {
                 out.println(lnumber + " - " + l);
                 lnumber += 1;
             }
 
-            System.out.println("Fitxeroa idatzi da");
+            System.out.println("\nFitxeroa idatzi da :)\n");
 
         } catch (FileNotFoundException fne) {
-            System.out.println("Fitxeroa ez da aurkitu :(");
+            System.out.println("\nFitxeroa ez da aurkitu :(\n");
 
-        } finally {
-            if (in != null) {
-                in.close();
-            }
-            if (out != null) {
-                out.close();
-            }
         }
     }
 }
