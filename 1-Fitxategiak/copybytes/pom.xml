@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>paagbi</groupId>
-  <artifactId>iostreams</artifactId>
-  <version>01</version>
+  <artifactId>copybytes</artifactId>
+  <version>1.0</version>
 
-  <name>iostreams</name>
+  <name>copybytes</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 

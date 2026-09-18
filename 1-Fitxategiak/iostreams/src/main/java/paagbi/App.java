@@ -1,9 +1,7 @@
 package paagbi;
 
-/**
- * Hello world!
- *
- */
+//Hello World! Printeatzen du
+
 public class App 
 {
     public static void main( String[] args )
